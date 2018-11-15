@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/ExternalReferencesLoadSample/Form1.cs) (VB: [Form1.vb](./VB/ExternalReferencesLoadSample/Form1.vb))
+<!-- default file list end -->
 # How to update external references in the loaded workbook.
 
 
