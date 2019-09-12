@@ -54,7 +54,7 @@ namespace ExternalReferencesLoadSample
             spreadsheetControl1.Document.ExternalWorkbooks.Replace(0, myWorkbook);
 
             // Insert a formula with an external reference that uses the full path.
-            spreadsheetControl1.Document.Worksheets[0].Cells["B1"].Formula = String.Format("SUM('{0}\\{1}'!test)", Environment.CurrentDirectory, shortName);
+            spreadsheetControl1.Document.Worksheets[0].Cells["B1"].Formula = String.Format("SUM('{0}'!test)",  myWorkbook.Options.Save.CurrentFileName);
             spreadsheetControl1.Document.Calculate();
             #endregion #externalworkbook
             spreadsheetControl1.ActiveWorksheet.SelectedCell = spreadsheetControl1.ActiveWorksheet.Cells["B1"];
